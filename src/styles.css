@@ -1,0 +1,78 @@
+body {
+  font-family: arial, sans-serif;
+  border-radius: 20px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 25px;
+  color: rgb(74, 74, 220);
+  margin-top: 0 15px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #888a8d;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  text-align: center;
+  color: #888a8d;
+  font-size: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 400px;
+}
+
+.temperature {
+  margin: 10px;
+  padding: 0 0auto;
+  font-size: 40px;
+  font-family: HelveticaNeue, helvetica, arial, sans-serif;
+  margin-left: 0;
+  padding-bottom: 0 0px;
+}
+
+.units {
+  position: relative;
+  top: -18px;
+  font-size: 16px;
+}
+.daysInWeek {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.temperatureIcon {
+  font-size: 20px;
+}
+
+.dayDegrees {
+  font-size: 25px;
+}
+
+.forecast {
+  height: 120px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+}
+.page-layout {
+  border: 1px solid #090b18;
+  padding: 30px 20px;
+  margin: 40px 10px;
+  max-width: 600px;
+  border-radius: 15px;
+}
+
+.search-form {
+  margin-bottom: 30px;
+}

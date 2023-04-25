@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App ┃ Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <div class="page-layout">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Enter town or city"
+                autofocus="on"
+                autocomplete="off"
+                id="search-text-input"
+                class="form-control"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="search"
+                class="form-control"
+                id="searchButton"
+              />
+            </div>
+            <div class="col-3">
+              <button class="btn btn-success w-100" id="current-location">
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <h1></h1>
+      <h2 id="date"></h2>
+      <h2 class="description" id="description"></h2>
+
+      <div class="row">
+        <div class="col-6">
+          <span id="weatherEmoji">☁️</span>
+          <span class="temperature" id="temperature"</span>
+            <span class="units">°C</span>
+        </div>
+      </div>
+        <h3>
+          <ul>
+            <li>Precipition: <span id="precipitation">0</span>%</li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> km/h </li>
+          </ul>
+        </h3>
+      </div>
+      <br />
+
+      <hr />
+
+      <div class="card forecast" style="width: 5rem;">
+        <div class="card-body">
+          <h2 class="daysInWeek">Sun</h2>
+          <i class="temperatureIcon">⛅️</i>
+          <h2 class="dayDegrees">10°</h2>
+        </div>
+      </div>
+
+      <div class="card forecast" style="width: 5rem;">
+        <div class="card-body">
+          <h2 class="daysInWeek">Mon</h2>
+          <i class="temperatureIcon">⛅️</i>
+          <h2 class="dayDegrees">11°</h2>
+        </div>
+      </div>
+
+      <div class="card forecast" style="width: 5rem;">
+        <div class="card-body">
+          <h2 class="daysInWeek">Tues</h2>
+          <i class="temperatureIcon">☁️</i>
+          <h2 class="dayDegrees">9°</h2>
+        </div>
+      </div>
+
+      <div class="card forecast" style="width: 5rem;">
+        <div class="card-body">
+          <h2 class="daysInWeek">Wed</h2>
+          <i class="temperatureIcon">☀️</i>
+          <h2 class="dayDegrees">14°</h2>
+        </div>
+      </div>
+
+      <div class="card forecast" style="width: 5rem;">
+        <div class="card-body">
+          <h2 class="daysInWeek">Thurs</h2>
+          <i class="temperatureIcon">☀️</i>
+          <h2 class="dayDegrees">13°</h2>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
